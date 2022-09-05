@@ -66,7 +66,7 @@ class OTAServerMainHandler(web.RequestHandler):
         applications = _get_applications(options.upload_path)
         self.render("otaserver.html",
                     favicon=os.path.join("assets", "favicon.ico"),
-                    title="SUIT Update Server",
+                    title="Byterg Mobile Device Update Server",
                     applications=applications,
                     host=options.http_host,
                     port=options.http_port)
